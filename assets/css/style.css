@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*
+ *****************************************
+    >>> Browser Reset & Common CSS|
+ *****************************************
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff;
+    background: #0d162d;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:focus,
+a:hover,
+a:visited,
+input,
+input:hover,
+input:focus,
+input:active,
+select {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 15px;
+    /* color: #fff; */
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 12px 34px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid #38d77d;
+    border-radius: 24px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn.button-primary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #38d77d;
+}
+
+.btn.button-primary:hover {
+    background-color: #38d77d;
+    color: #0d162d;
+    border: 2px solid #38d77d;
+}
+
+.btn.button-secondary {
+    background: #38d77d;
+    color: #0d162d;
+    border: 2px solid #38d77d;
+}
+
+.btn.button-secondary:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #38d77d;
+}
+
+/* =================================
+    Section CSS
+==================================== */
+section {
+    padding: 70px 0;
+}
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-title h2::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 130px;
+    background: #38d77d;
+    text-align: center;
+    margin-left: -65px;
+}
+
+.section-title h2 span {
+    color: #38d77d;
+    margin-right: 16px;
+    font-size: 40px;
+}
+
+/*
+ *****************************************
+    >>> Breadcrams CSS |
+ *****************************************
+*/
+.breadcrams {
+    margin-top: 64px;
+}
+
+.breadcrams-wrapper {
+    padding: 30px;
+}
+
+.breadcrams-home {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.breadcram-title {
+    color: #38d77d;
+}
+
+.breadcrams-home span,
+.breadcrams-icon,
+.breadcram-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.breadcrams-home:hover,
+.breadcram-title:hover {
+    color: #fff;
+}
+
+.services-breadcram,
+.contact-breadcram {
+    background-color: #1e2947;
+}
+
+/*
+ *****************************************
+    >>> Navigation CSS |
+ *****************************************
+*/
+.header-nav {
+    background-image: -webkit-linear-gradient(-45deg, rgb(13, 21, 46) 0%, rgb(109, 36, 255) 100%);
+}
+
+.custome-nav {
+    background-image: -webkit-linear-gradient(-45deg, rgb(13, 21, 46) 0%, rgb(109, 36, 255) 100%);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.custome-nav .logo,
+footer .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: color 0.4s ease-in-out;
+}
+
+.custome-nav .logo span,
+footer .logo span {
+    font-size: 30px;
+    border: 4px solid #38d77d;
+    padding: 0 5px;
+    margin-right: 4px;
+    transition: all 0.4s ease-in-out;
+}
+
+.custome-nav .logo:hover,
+footer .logo:hover {
+    color: #38d77d;
+}
+
+.custome-nav .logo:hover span,
+footer .logo:hover span {
+    color: #FFFFFF;
+}
+
+.custome-nav .custom-nav-itme .custom-nav-link,
+.custome-nav .custom-nav-itme .custom-nav-link.active {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: none;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+
+.custome-nav .custom-nav-itme .custom-nav-link:hover {
+    color: #38d77d;
+}
+
+.custome-nav .custom-nav-itme .custom-nav-link::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    height: 2px;
+    width: 0;
+    border-bottom: 3px solid #38d77d;
+    transition: all 0.4s ease-in-out;
+}
+
+.custome-nav .custom-nav-itme .custom-nav-link:hover::before {
+    width: 100%;
+}
+
+.custome-nav.sticky-menu {
+    position: fixed;
+    background-image: -webkit-linear-gradient(-45deg, rgb(13, 21, 46) 0%, rgb(109, 36, 255) 100%);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    width: 100%;
+}
+
+/*
+ *****************************************
+    >>> Hero Area CSS |
+ *****************************************
+*/
+.hero-main {
+    height: 100vh;
+}
+
+.intro-name {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.intro-name h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro-name h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.intro-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #38d77d;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.text-slider-items {
+    display: none;
+}
+
+.intro-details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 16px 0;
+}
+
+/*
+ *****************************************
+    >>> About CSS |
+ *****************************************
+*/
+.about .about-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.about-wrapper h4 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.about-wrapper .location {
+    font-size: 12px;
+    margin: 10px 0 20px;
+    color: #38d77d;
+}
+
+.about-wrapper .location .fa-map-marked-alt {
+    margin-right: 5px;
+}
+
+.self-info {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.social-icons li a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.social-icons li .facebook {
+    background: #5b8998;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.social-icons li .twitter {
+    background: #00acee;
+    color: #fff;
+    border: 1px solid #00acee;
+}
+
+.social-icons li .linkedin {
+    background: #0072b1;
+    color: #fff;
+    border: 1px solid #0072b1;
+}
+
+.social-icons li .github {
+    background: #171515;
+    color: #fff;
+    border: 1px solid #171515;
+}
+
+.social-icons li .facebook:hover {
+    color: #5b8998;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+}
+
+.social-icons li .twitter:hover {
+    color: #00acee;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+}
+
+.social-icons li .linkedin:hover {
+    color: #0072b1;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+}
+
+.social-icons li .github:hover {
+    color: #171515;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+}
+
+.about-content-left .about-info p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.about-content-left .about-info p span {
+    font-weight: 400;
+    color: #38d77d;
+    margin-left: 8px;
+    opacity: 1;
+}
+
+/*
+ *****************************************
+    >>> Resume CSS |
+ *****************************************
+*/
+.resume {
+    background-color: #171a1d;
+}
+
+h3.resume-border {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.resume-timeline {
+    counter-reset: list 0;
+    padding: 0 0 0 22px;
+    position: relative;
+}
+
+.resume-timeline-item {
+    border-left: 1px solid hsla(0, 0%, 100%, .2);
+    list-style: none;
+}
+
+.resume-timeline-title {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, 0));
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.resume-timeline-title:before {
+    background-color: #38d77d;
+    border-radius: 50%;
+    color: #fff;
+    content: counter(list);
+    counter-increment: list;
+    display: inline-block;
+    height: 40px;
+    left: -22px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    width: 40px;
+}
+
+.resume-timeline-text {
+    margin: 0;
+    padding: 0 0 40px 40px;
+}
+
+.resume-timeline-text .resume-title {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.resume-timeline-text .resume-subtitle {
+    color: #38d77d;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/*
+ *****************************************
+    >>> Project CSS |
+ *****************************************
+*/
+/* .projects {
+    background-color: #171a1d;
+} */
+.project-card {
+    background-color: #171a1d;
+    transition: all .4s ease-in-out;
+    border-bottom: 4px solid transparent;
+}
+
+.project-card:hover {
+    box-shadow: 0px 0px 68px 10px #3b523c;
+    border-bottom: 4px solid #38d77d;
+}
+
+.projects img {
+    height: 250px;
+}
+
+.project-card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.projects .project-card .project-card-body {
+    padding: 20px;
+}
+
+/*
+ *****************************************
+    >>> Services CSS |
+ *****************************************
+*/
+.services {
+    background-color: #1e2947;
+}
+
+.service-box,
+.contact-wrapper {
+    background: #0d162d;
+    padding: 14px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(51, 16, 148, 0.15);
+    transition: all 0.5s ease-in-out;
+}
+
+.service-box h5,
+.contact-wrapper .contact-title {
+    margin: 20px 0;
+    color: #38d77d;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-box p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.card-icon,
+.contact-wrapper .contact-icon {
+    display: inline-block;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    line-height: 90px;
+    text-align: center;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.service-box:hover,
+.contact-wrapper:hover {
+    transform: scale(1.05);
+    border-bottom: 2px solid #38d77d;
+}
+.service-box:hover h5,
+.contact-wrapper:hover .contact-title {
+    color: #FFFFFF;
+}
+.service-box:hover .card-icon,
+.contact-wrapper:hover .contact-icon {
+    border-color: #38d77d;
+    background-color: #38d77d;
+}
+
+
+/*
+ *****************************************
+    >>> Blogs CSS |
+ *****************************************
+*/
+.blog-card {
+    background-color: #283355;
+}
+
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card .blog-card-body {
+    padding: 18px;
+}
+
+/*
+ *****************************************
+    >>> Contact CSS |
+ *****************************************
+*/
+.contact {
+    background-color: #1e2947;
+}
+.contact-wrapper .contact-text {
+    font-size: 18px;
+}
+.contact-form .contact-form-floating .contact-input,
+.contact-form .contact-form-floating .contact-textarea {
+    font-size: 16px;
+    background-color: #535c68;
+    outline: none;
+    box-shadow: none;
+    border: 4px solid transparent;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.contact-form .contact-form-floating .contact-input:focus,
+.contact-form .contact-form-floating .contact-textarea:focus {
+    border: 2px solid #38d77d;
+
+}
+
+.contact-form .contact-form-floating .contact-label {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+/*
+ *****************************************
+    >>> Footer CSS |
+ *****************************************
+*/
+footer {
+    padding: 40px 0;
+}
+
+footer p {
+    color: #f6f6f6;
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+/*
+ *****************************************
+    >>> Page CSS |
+ *****************************************
+*/
+.about-footer,
+.projects-footer,
+.services-footer,
+.blogs-footer,
+.contact-footer {
+    background-color: #171a1d;
+}
+
+/*
+ *****************************************
+    >>> Responsive CSS |
+ *****************************************
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 508px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 508px) {
+    .intro-name h4 {
+        font-size: 16px;
+    }
+
+    .intro-name h1 {
+        font-size: 32px;
+        letter-spacing: 0px;
+    }
+
+    .intro-title {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991px) {
+    .responsive-nav {
+        margin-top: 50px;
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+        text-align: center;
+        font-size: 22px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .intro-name h4 {
+        font-size: 18px;
+    }
+
+    .intro-name h1 {
+        font-size: 50px;
+        letter-spacing: 0px;
+    }
+
+    .intro-title {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 16px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
+}
